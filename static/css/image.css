@@ -1,0 +1,42 @@
+
+
+#bg {
+    background-image: url('/static/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.mainDetails {
+	padding: 25px 35px;
+	border-bottom: 2px solid #07105c;
+    width: 90%;
+	max-width: 800px;
+	background: #f3f3f300;
+	margin: 30px auto;
+}
+
+
+h1 {font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+button {
+    background-color: #0e0c0c00; 
+    border: none;
+    color: rgb(2, 2, 2);
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+  }
+
+.transparentField {
+    background: #f3f3f300;
+
+}

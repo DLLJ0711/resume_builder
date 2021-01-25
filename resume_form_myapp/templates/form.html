@@ -1,0 +1,35 @@
+{% load crispy_forms_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/image.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+    </style>
+</head>
+
+<body>
+    <div id="bg">
+        <div class="mainDetails">
+
+            <h1 class="titelDetail">RESUME BUILDER</h1>
+
+            <form method="POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <button type="submit">SUBMIT</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
